@@ -8,11 +8,11 @@ $darkest_blue: #161626;
 $darker_blue: #202028;
 $dark_blue: #252530;
 
-$sidebar_width: 20vw;
+$sidebar_width: 40vw;
 $normal_sidebar_width: 15%;
 $small_sidebar_width: 15%;
 
-$header_height: 40vw;
+$header_height: 100vw;
 
 $desktop_header_height: 10rem;
 $mobile_header_height: 60vw;
@@ -37,16 +37,17 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
     font-weight: lighter;
+    text-align: center;
 }
 
 h2 {
     font-size: 1rem;
 
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.4rem;
     line-height: 2rem;
     text-transform: uppercase;
     font-weight: lighter;

@@ -1,0 +1,129 @@
+
+/*GENERAL*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1, h2, p, a, li {
+        color: lightgray;
+        font-family: sans-serif;
+        background-color: rgb(0, 0, 0, 0);
+    }
+
+    h2 {padding-bottom: 12px; }
+
+    p {padding-bottom: 3px;}
+
+    br {margin-bottom: 0.2em;}
+
+    ul li {
+        display: list-item;
+        list-style: disc;
+        margin-left: 3em;
+    }
+
+    li {padding-bottom: 0.4em;}
+
+
+/*HEADER*/
+    header {
+        display: flex;
+        background-color: #222226;
+        justify-content: space-between;    
+        align-items: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    header h1 {
+        font-size: 3em;
+        padding-right: 20px;
+    }
+
+    header h2 {
+        font-size: 1.8em;
+        padding-bottom: 10px;
+    }
+    
+    /*logo and title*/
+    .logoimg {
+        padding-right: 20px;
+    }
+
+    .logo-title {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-right: 20px;
+        text-decoration: none;
+    }
+
+    /*navigation links*/
+    ul.nav_links, li.nav_links, a.nav_links {
+        color: lightgray;
+        text-decoration: none;
+        display: inline;
+        padding-left: 1em;
+        font-size: 16px;
+    }
+
+
+/*CONTENT*/
+    #content {
+        display: flex;
+        flex-direction: column;    
+    }
+
+    /*sections*/
+    .index_item1 {
+        padding: 1%;
+        padding-left: 8%;
+        padding-right: 8%;
+        background-color: rgb(55, 56, 66);
+    }
+    
+    .index_item2 {
+        padding: 1%;
+        padding-left: 8%;
+        padding-right: 8%;
+        background-color: rgb(60, 61, 71);
+    }
+
+    /*images as the concept sketches*/
+    .images {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    
+/*FOOTER*/
+    footer {
+        background-color: #222226;
+        text-align: center;
+        padding: 2em;
+
+    }
+
+    /*wip*/
+    p.footer {
+        padding-top: 1.6em;
+        color:gray;
+        font-size: 0.9em;
+    }
+
+    /*navigation links*/
+    ul.footer, li.footer, a.footer {
+        color: #777;
+        text-decoration: none;
+        list-style: none;
+        display: inline;
+    }
+
+    .footer li {
+        padding-left: 0.02em;
+    }

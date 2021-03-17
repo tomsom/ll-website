@@ -368,21 +368,19 @@
         padding-bottom: 5px;
     }
 
-    header h1 {
-        font-size: 30px;
-    }
+
 
     header h3 {
-        font-size: 0.8rem;
+
         text-align: center;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     p, li{
-        font-size: 13px;
+        font-size: 1rem;
     }
 
     .nav_section {
@@ -408,6 +406,7 @@
         margin-bottom: 0%;
         width: 90%;
         text-align: center;
+        font-size: 1rem;
     }
 
     .index_item1, .index_item2{

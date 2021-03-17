@@ -15,7 +15,7 @@ body a {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
   letter-spacing: 1rem;
   text-transform: uppercase;
   font-weight: lighter;
@@ -59,7 +59,7 @@ header {
   justify-content: center;
   width: 100%;
   height: 40vw;
-  background-color: green;
+  background-color: #161626;
 }
 
 .nav_section {

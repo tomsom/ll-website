@@ -37,7 +37,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
     font-weight: lighter;
@@ -80,7 +80,7 @@ header {
     justify-content: center;
     width: 100%;
     height: $header_height;
-    background-color: green;
+    background-color: $darkest_blue;
 }
 
 .nav_section {

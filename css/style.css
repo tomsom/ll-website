@@ -144,6 +144,18 @@ header hr {
   border-radius: 0.3rem;
 }
 
+.uneven_section, .even_section {
+  padding: 1rem 1vw;
+}
+
+.uneven_section {
+  background-color: #202028;
+}
+
+.even_section {
+  background-color: #252530;
+}
+
 .cont_foot {
   width: 100%;
   background-color: orange;

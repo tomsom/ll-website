@@ -93,11 +93,20 @@ header {
 
 }
 
+.uneven_section, .even_section {
+    padding: 1rem 1vw;
+
+    
+}
+.uneven_section {background-color: $darker_blue;}
+.even_section {background-color: $dark_blue;}
 
 .cont_foot {
     width: 100%;
     background-color: orange;
 }
+
+
 
 
 /*CONTAINER LAYOUT*/

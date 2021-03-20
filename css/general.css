@@ -40,8 +40,8 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  padding-bottom: 10px;
-  letter-spacing: 3px;
+  padding-bottom: 0.7rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-weight: lighter;
 }
@@ -52,7 +52,7 @@ hr {
 }
 
 p {
-  padding-bottom: 3px;
+  padding-bottom: 0.2rem;
 }
 
 ul, li {

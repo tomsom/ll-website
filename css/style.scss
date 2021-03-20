@@ -27,7 +27,7 @@ header {
     flex-direction: column;
     text-align: center;
     padding: 1rem 0;
-    ul {list-style: none;}
+    ul, li {list-style: none;}
     a, li {
         text-decoration: none;
         background-color: $dark_green;
@@ -41,6 +41,7 @@ header {
 
 .uneven_section, .even_section {
     padding: 1rem 1vw;  
+    ul {margin-left: 2rem;}
 }
 .uneven_section {background-color: $darker_blue;}
 .even_section {background-color: $dark_blue;}
@@ -53,7 +54,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
 
-    ul {list-style: none;}
+    ul, li {list-style: none;}
     a, li {
         letter-spacing: 0.09rem;
         margin: 0.2rem;

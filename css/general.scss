@@ -1,6 +1,6 @@
 @import 'variables.scss';
 
-*{
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,6 @@
     
     body {
         background-color: $dark_blue;
-    
         color: $light_gray;
         a {color: $light_gray;}
     
@@ -25,7 +24,6 @@
     
     h2 {
         font-size: 1rem;
-    
         letter-spacing: 0.4rem;
         line-height: 2rem;
         text-transform: uppercase;
@@ -42,10 +40,11 @@
     
     hr {
         margin-bottom: 1rem;
-        width: 15%;
+        width: 12rem;
     }
     
     p {padding-bottom: 3px;}
+    ul, li {list-style: "-  ";}
     
     p, li {
         font-size: 1rem;

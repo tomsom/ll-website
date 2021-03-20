@@ -9,14 +9,18 @@
     $darker_blue: #202028;
     $dark_blue: #252530;
 
+    $light_gray: #ccc;
+    $gray: #777;
+
 /*SIZES*/
     //scss variables dont work with calc() too well...
     :root{
         --concept-image-height: 280px;
         --concept-image-format: calc(21 / 30);
         --concept-image-width: calc( var(--concept-image-height) * calc(var(--concept-image-format)) );
-        $concept_image_height: var(--concept-image-height);
-    }
+      
+    } 
+    $concept_image_height: var(--concept-image-height);
     
 /*UNUSED*/
 $sidebar_width: 40vw;

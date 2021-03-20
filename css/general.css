@@ -2,6 +2,10 @@
   font-family: "Quicksand";
   src: url("../src/Quicksand/Quicksand-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Quicksand Bold";
+  src: url("../src/Quicksand/Quicksand-Bold.ttf") format("truetype");
+}
 /*COLORS*/
 /*SIZES*/
 :root {
@@ -27,9 +31,9 @@ body a {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: 0.7rem;
-  font-weight: 600;
+  font-family: "Quicksand Bold", sans-serif;
   text-align: center;
 }
 
@@ -37,6 +41,7 @@ h2 {
   font-size: 1rem;
   letter-spacing: 0.4rem;
   line-height: 2.5rem;
+  font-family: "Quicksand Bold", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }

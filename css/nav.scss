@@ -1,0 +1,118 @@
+@import 'variables.scss';
+
+  
+  #hamburger { display: none; }
+  
+
+
+
+
+  /* Break down menu items into vertical */
+  #nav_items a {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #nav_items { display: none; }
+  #nav_section input:checked ~ #nav_items { display: block; }
+
+
+
+#nav_section {
+    display: flex;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
+
+    label { 
+        display: inline-block; 
+        position: absolute;
+        top: 92vh;
+        left: 1rem;
+        z-index: 5;
+        color: white;
+        font-style: normal;
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.08rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: $color_secondary_text;
+        padding: 0.6rem;
+        margin: 0.4rem 0;
+        width: 80vw;
+        transition: background-color 200ms ease-in-out;
+        transition: color 200ms ease-in-out;
+        border: solid $darkest_blue 5px;
+    }
+
+
+    a:hover {
+        background-color: $darkest_blue;
+        color: $gray;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+
+      
+      /* Hide Hamburger */
+      
+
+        #nav_section {
+            padding: 0%;
+            label { display: none; }
+        }
+        #nav_items {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        background-color: $color_background_header_footer;
+        padding: 0 14vw 0.7rem 14vw;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.08rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0rem;
+            margin: 0;
+            border-radius: 0;
+            background: none !important;
+            color: $color_primary_text;
+            padding-top: 0.6rem;
+            padding-bottom: 0.3rem;
+            border: none;
+            border-bottom: solid;
+            border-color: $color_background_header_footer;
+            border-width: 0.2rem;
+            transition: color 200ms ease-in-out;
+            transition: border-color 200ms ease-in-out;
+        }
+               
+        
+        a:hover {
+            border-color: $light_green;
+            color: $light_green;
+        }
+    }
+}

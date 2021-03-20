@@ -15,7 +15,7 @@
 
 <body>
     <!--Header-->
-    <header>
+    <header id="header">
         <a class="logoimg" href="index.html">
             <img  src="src/leek.png" alt="logo"> </a>
 
@@ -27,14 +27,22 @@
     </header>
 
     <!--Navigation Section-->
-    <div class="nav_section">
+    <nav id="nav_section">
+
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+        
+        <div id="nav_items">
             <a href="index.html">Home</a>
             <a href="index.html">News</a>
             <a href="index.html">Features</a>
             <a href="index.html">Goals</a>
             <a href="index.html">Screenshots</a>
             <a href="http://github.com/tomsom/leek-launcher">Github</a>
-    </div>
+
+        </div>
+            
+    </nav>
 
 
   
@@ -105,7 +113,7 @@
                 <li class="footer_list"><a href="">Screenshots</a></li>
                 <li class="footer_list"><a href="http://github.com/tomsom/leek-launcher">Github</a></li>
             </ul>
-    
+            <a href="index.html#header">Go to top</a>
             <p class="footer_text">Website and project are work in progress</p>            
     </footer>    
 

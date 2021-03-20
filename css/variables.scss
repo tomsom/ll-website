@@ -4,6 +4,10 @@
     font-family: 'Quicksand';
     src: url("../src/Quicksand/Quicksand-Regular.ttf") format('truetype');
   }
+  @font-face {
+    font-family: 'Quicksand Bold';
+    src: url("../src/Quicksand/Quicksand-Bold.ttf") format('truetype');
+  }
 /*COLORS*/
 
     $color_background_body: #000a12;

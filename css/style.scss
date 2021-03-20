@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import 'general.scss';
+@import 'nav.scss';
 @import 'concept_image_animation.scss';
 
 
@@ -27,35 +28,7 @@ header {
    }
 }
 
-.nav_section {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 1rem 0;
-    a{
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0.08rem;
-        font-weight: 600;
-        font-size: 0.9rem;
-        color: $light_gray;
-        padding: 0.6rem;
-        margin: 0.4rem 0;
-        width: 80vw;
-        transition: background-color 200ms ease-in-out;
-        transition: color 200ms ease-in-out;
-        border: solid $darkest_blue 5px;
-    }
 
-
-    a:hover {
-        background-color: $darkest_blue;
-        color: $gray;
-    }
-}
 
 .uneven_section, .even_section {
     display: flex;
@@ -64,6 +37,7 @@ header {
     justify-content: left;
     border-radius: 1.5rem;
     padding: 2rem;
+    height: 100vh;
     //ul {margin-left: 2.5rem;}
 }
 .uneven_section {background-color: $color_secondary_background;}
@@ -99,47 +73,10 @@ footer {
         img {height: 11vh;}
     }
 
-    .nav_section {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        align-items: center;
-        background-color: $color_background_header_footer;
-        padding: 0 14vw 0.7rem 14vw;
-        justify-content: space-evenly;
 
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.08rem;
-            font-weight: 600;
-            font-size: 0.9rem;
-            padding: 0rem;
-            margin: 0;
-            border-radius: 0;
-            background: none !important;
-            color: $color_primary_text;
-            padding-top: 0.6rem;
-            padding-bottom: 0.3rem;
-            border: none;
-            border-bottom: solid;
-            border-color: $color_background_header_footer;
-            border-width: 0.2rem;
-            transition: color 200ms ease-in-out;
-            transition: border-color 200ms ease-in-out;
-        }
-               
-        
-        a:hover {
-            border-color: $light_green;
-            color: $light_green;
-        }
-
-    }
     .uneven_section, .even_section {
         padding: 1rem 8vw;  
+        height: auto;
       //  ul {margin-left: 2.5rem;}
     }
     

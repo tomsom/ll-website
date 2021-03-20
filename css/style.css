@@ -75,6 +75,10 @@ p, li {
   line-height: 1.4rem;
 }
 
+a {
+  outline: none;
+}
+
 /*COLORS*/
 /*SIZES*/
 :root {
@@ -300,6 +304,7 @@ footer p {
     border-color: #161626;
     border-width: 0.2rem;
     transition: color 200ms ease-in-out;
+    transition: border-color 200ms ease-in-out;
   }
   .nav_section a:hover {
     border-color: #777;

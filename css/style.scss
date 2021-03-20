@@ -125,14 +125,15 @@ footer {
             border-color: $darkest_blue;
             border-width: 0.2rem;
             transition: color 200ms ease-in-out;
+            transition: border-color 200ms ease-in-out;
         }
                
         
         a:hover {
             border-color: $gray;
             color: $gray;
-            
         }
+
     }
     .uneven_section, .even_section {
         padding: 1rem 16vw;  

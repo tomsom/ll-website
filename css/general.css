@@ -64,4 +64,8 @@ p, li {
   letter-spacing: 0.05rem;
   font-weight: 400;
   line-height: 1.4rem;
+}
+
+a {
+  outline: none;
 }/*# sourceMappingURL=general.css.map */

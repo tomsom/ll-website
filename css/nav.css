@@ -37,9 +37,6 @@
 
 #nav_section {
   display: flex;
-  position: absolute;
-  left: 0%;
-  top: 0;
   width: 100%;
   justify-content: center;
   flex-direction: column;

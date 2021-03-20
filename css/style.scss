@@ -13,7 +13,7 @@ header {
     height: 100vh;
     width: 100%;
     padding: 2rem 0;
-    background-color: $darkest_blue;
+    background-color: $color_background_header_footer;
 
     a {text-decoration: none;}
 
@@ -58,17 +58,22 @@ header {
 }
 
 .uneven_section, .even_section {
-    padding: 1rem 2vw;  
-    ul {margin-left: 2.5rem;}
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 5vw;
+    justify-content: left;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    //ul {margin-left: 2.5rem;}
 }
-.uneven_section {background-color: $darker_blue;}
-.even_section {background-color: $dark_blue;}
+.uneven_section {background-color: $color_secondary_background;}
+.even_section {background-color: $color_secondary_background;}
 
 
 footer {
     display: flex;
     flex-direction: column;
-    background-color: $darkest_blue;
+    background-color: $color_background_header_footer;
     text-align: center;
     padding: 1rem 0;
 
@@ -101,9 +106,9 @@ footer {
         margin: 0;
         text-align: center;
         align-items: center;
-        background-color: $darkest_blue;
+        background-color: $color_background_header_footer;
         padding: 0 14vw 0.7rem 14vw;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         a {
             text-decoration: none;
@@ -115,12 +120,12 @@ footer {
             margin: 0;
             border-radius: 0;
             background: none !important;
-            color: $light_gray;
+            color: $color_primary_text;
             padding-top: 0.6rem;
             padding-bottom: 0.3rem;
             border: none;
             border-bottom: solid;
-            border-color: $darkest_blue;
+            border-color: $color_background_header_footer;
             border-width: 0.2rem;
             transition: color 200ms ease-in-out;
             transition: border-color 200ms ease-in-out;
@@ -128,14 +133,14 @@ footer {
                
         
         a:hover {
-            border-color: $gray;
-            color: $gray;
+            border-color: $light_green;
+            color: $light_green;
         }
 
     }
     .uneven_section, .even_section {
-        padding: 1rem 16vw;  
-        ul {margin-left: 2.5rem;}
+        padding: 1rem 8vw;  
+      //  ul {margin-left: 2.5rem;}
     }
     
     .images {margin-left: 3rem;}

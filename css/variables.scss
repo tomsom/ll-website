@@ -1,10 +1,24 @@
 
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../src/Quicksand/Quicksand-Regular.ttf") format('truetype');
+  }
 /*COLORS*/
 
-    $dark_green: #718c69ff;
-    $green: #99b75fff;
-    $light_green: #dddfa5ff;
+    $color_background_body: #000a12;
+    $color_background_header_footer: #060e1b;
+    //$color_background_header_footer: #00101d;
+    $color_primary_background: #000a12;
+    $color_secondary_background: #14171b;
+    $color_primary_text: rgb(190, 190, 165);
+    $color_secondary_text: #555;
+    $lightest_blue: #eef;
+    $lighter_blue: #ddf;
 
+    $darker_gray: #222;
+
+    //dark-theme
     $darkest_blue: #161626;
     $darker_blue: #202028;
     $dark_blue: #252530;
@@ -12,6 +26,11 @@
     $dark_gray: #333;
     $gray: #777;
     $light_gray: #ccc;
+
+    //light-theme
+    @media (prefers-color-scheme: light) {
+
+    }
     
 
 /*SIZES*/
@@ -25,16 +44,6 @@
     $concept_image_height: var(--concept-image-height);
     
 /*UNUSED*/
-$sidebar_width: 40vw;
-$normal_sidebar_width: 15%;
-$small_sidebar_width: 15%;
-
-$header_height: 15rem;
-
-$desktop_header_height: 10rem;
-$mobile_header_height: 60vw;
-
-$footer_height: 15rem;
-
-$sidebar_height: 30vw;
-
+    $dark_green: #718c69ff;
+    $green: #99b75fff;
+    $light_green: #dddfa5ff;

@@ -8,9 +8,11 @@
 /*MOBILE*/
 header {
     display: flex;
+    position: relative;
     text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 0;
     height: 100vh;
     width: 100%;
     padding: 2rem 0;
@@ -29,11 +31,19 @@ header {
 }
 
 
-
+#sections {
+    position: absolute;
+    width: 100%;
+    top:100vh;
+    z-index: 5;
+    background-color: $color_background_body;
+}
 .uneven_section, .even_section {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin: 2rem 5vw;
+    z-index: 10;
     justify-content: left;
     border-radius: 1.5rem;
     padding: 2rem;

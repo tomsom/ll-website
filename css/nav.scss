@@ -15,14 +15,31 @@
   }
 
   /* Toggle Show/Hide Menu */
-  #nav_items { display: none; }
-  #nav_section input:checked ~ #nav_items { display: block; }
+  #nav_items { 
+    position: absolute;
+    top:100vh;
+    display: block;
+    z-index: 1;
+    padding: 2rem;
+    padding-bottom: 3.2rem;
+    background-color: $color_primary_background;
+    transition-property: transform;
+    transition-duration: 1s;
+    }
+  #nav_section input:checked ~ #nav_items 
+  { 
+      
+   
+    transform: translate(0, -410px) ; 
+
+     
+}
 
 
 
 #nav_section {
     display: flex;
-
+    
     width: 100%;
     justify-content: center;
     flex-direction: column;

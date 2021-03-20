@@ -28,11 +28,19 @@
 
 /* Toggle Show/Hide Menu */
 #nav_items {
-  display: none;
+  position: absolute;
+  top: 100vh;
+  display: block;
+  z-index: 1;
+  padding: 2rem;
+  padding-bottom: 3.2rem;
+  background-color: #000a12;
+  transition-property: transform;
+  transition-duration: 1s;
 }
 
 #nav_section input:checked ~ #nav_items {
-  display: block;
+  transform: translate(0, -410px);
 }
 
 #nav_section {

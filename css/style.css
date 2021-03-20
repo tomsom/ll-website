@@ -1,3 +1,21 @@
+/*COLORS*/
+/*SIZES*/
+:root {
+  --concept-image-height: 280px;
+  --concept-image-format: calc(21 / 30);
+  --concept-image-width: calc( var(--concept-image-height) * calc(var(--concept-image-format)) );
+}
+
+/*UNUSED*/
+/*COLORS*/
+/*SIZES*/
+:root {
+  --concept-image-height: 280px;
+  --concept-image-format: calc(21 / 30);
+  --concept-image-width: calc( var(--concept-image-height) * calc(var(--concept-image-format)) );
+}
+
+/*UNUSED*/
 * {
   margin: 0;
   padding: 0;
@@ -154,6 +172,100 @@ header hr {
 
 .even_section {
   background-color: #252530;
+}
+
+.images {
+  height: 280px;
+  margin-left: calc(calc(100% - var(--concept-image-width) ) / 2);
+}
+
+.images img {
+  position: absolute;
+  height: 280px;
+  opacity: 0;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+  /** fadeIn beginnt            **/
+  11.11% {
+    opacity: 1;
+  }
+  /** Bild steht                **/
+  22.22% {
+    opacity: 1;
+  }
+  /** Bild bleibt zwei Sekunden **/
+  33.33% {
+    opacity: 0;
+    display: none;
+  }
+  /** fadeOut beendet           **/
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+  /** fadeIn beginnt            **/
+  11.11% {
+    opacity: 1;
+  }
+  /** Bild steht                **/
+  22.22% {
+    opacity: 1;
+  }
+  /** Bild bleibt zwei Sekunden **/
+  33.33% {
+    opacity: 0;
+    display: none;
+  }
+  /** fadeOut beendet           **/
+  100% {
+    opacity: 0;
+  }
+}
+.images img:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.images img:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.images img:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.images img:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.images img:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.images img:nth-child(6) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 .cont_foot {

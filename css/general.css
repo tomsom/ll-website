@@ -1,3 +1,12 @@
+/*COLORS*/
+/*SIZES*/
+:root {
+  --concept-image-height: 280px;
+  --concept-image-format: calc(21 / 30);
+  --concept-image-width: calc( var(--concept-image-height) * calc(var(--concept-image-format)) );
+}
+
+/*UNUSED*/
 * {
   margin: 0;
   padding: 0;

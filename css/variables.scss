@@ -1,11 +1,24 @@
-$dark_green: #718c69ff;
-$middle_green: #99b75fff;
-$light_green: #dddfa5ff;
 
-$darkest_blue: #161626;
-$darker_blue: #202028;
-$dark_blue: #252530;
+/*COLORS*/
 
+    $dark_green: #718c69ff;
+    $middle_green: #99b75fff;
+    $light_green: #dddfa5ff;
+
+    $darkest_blue: #161626;
+    $darker_blue: #202028;
+    $dark_blue: #252530;
+
+/*SIZES*/
+    //scss variables dont work with calc() too well...
+    :root{
+        --concept-image-height: 280px;
+        --concept-image-format: calc(21 / 30);
+        --concept-image-width: calc( var(--concept-image-height) * calc(var(--concept-image-format)) );
+        $concept_image_height: var(--concept-image-height);
+    }
+    
+/*UNUSED*/
 $sidebar_width: 40vw;
 $normal_sidebar_width: 15%;
 $small_sidebar_width: 15%;
@@ -18,3 +31,4 @@ $mobile_header_height: 60vw;
 $footer_height: 15rem;
 
 $sidebar_height: 30vw;
+

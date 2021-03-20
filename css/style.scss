@@ -101,6 +101,38 @@ header {
 .uneven_section {background-color: $darker_blue;}
 .even_section {background-color: $dark_blue;}
 
+.images {
+    height: $concept_image_height;
+    //variables in the calc() dont work for some reason
+     
+    margin-left: calc(calc(100% - var(--concept-image-width) ) / 2);    
+
+}
+.images img {
+    position: absolute;
+    height: $concept_image_height;
+    opacity:0; 
+    animation-name: fade; 
+    animation-duration: 12s; 
+    animation-iteration-count: infinite; 
+    
+}
+
+@keyframes fade {
+    0%      { opacity: 0; display: block;}  /** fadeIn beginnt            **/
+    11.11%  { opacity: 1; }  /** Bild steht                **/
+    22.22%  { opacity: 1; }  /** Bild bleibt zwei Sekunden **/
+    33.33%  { opacity: 0; display: none;}  /** fadeOut beendet           **/
+    100%    { opacity: 0; }
+}
+
+.images img:nth-child(1) { animation-delay: 0s; }
+.images img:nth-child(2) { animation-delay: 2s; }
+.images img:nth-child(3) { animation-delay: 4s; } 
+.images img:nth-child(4) { animation-delay: 6s; }
+.images img:nth-child(5) { animation-delay: 8s; }
+.images img:nth-child(6) { animation-delay: 10s; } 
+
 .cont_foot {
     width: 100%;
     background-color: orange;

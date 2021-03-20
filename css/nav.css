@@ -77,14 +77,11 @@
   transition: color 200ms ease-in-out;
   border: solid #161626 5px;
 }
-#nav_section a:hover {
-  background-color: #161626;
-  color: #777;
-}
 
 @media only screen and (min-width: 768px) {
   /* Hide Hamburger */
   #nav_section {
+    height: auto;
     padding: 0%;
   }
   #nav_section label {
@@ -92,6 +89,8 @@
   }
 
   #nav_items {
+    position: relative;
+    top: auto;
     display: flex;
     flex-direction: row;
     width: 100%;

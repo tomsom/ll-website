@@ -42,6 +42,7 @@ header {
     display: flex;
     position: relative;
     flex-direction: column;
+    background-color: $color_primary_background;
     margin: 2rem 5vw;
     z-index: 10;
     justify-content: left;
@@ -50,8 +51,6 @@ header {
     height: 100vh;
     ul {margin-left: 2rem;}
 }
-.uneven_section {background-color: $color_secondary_background;}
-.even_section {background-color: $color_secondary_background;}
 
 
 footer {
@@ -75,6 +74,11 @@ footer {
 
 
 @media only screen and (min-width: 768px) {
+
+    #sections {
+        position: relative;
+        top: auto;
+    }
 
     header {
         height: auto;

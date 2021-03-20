@@ -22,7 +22,7 @@
     z-index: 1;
     padding: 2rem;
     padding-bottom: 3.2rem;
-    background-color: $color_primary_background;
+    background-color: $color_background_body;
     transition-property: transform;
     transition-duration: 1s;
     }
@@ -71,14 +71,9 @@
         width: 80vw;
         transition: background-color 200ms ease-in-out;
         transition: color 200ms ease-in-out;
-        border: solid $darkest_blue 5px;
+        border: solid $color_primary_other 5px;
     }
 
-
-    a:hover {
-        background-color: $darkest_blue;
-        color: $gray;
-    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -89,10 +84,13 @@
       
 
         #nav_section {
+            height: auto;
             padding: 0%;
             label { display: none; }
         }
         #nav_items {
+        position: relative;
+        top: auto;
         display: flex;
         flex-direction: row;
         width: 100%;

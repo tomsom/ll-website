@@ -159,14 +159,11 @@ a {
   transition: color 200ms ease-in-out;
   border: solid #161626 5px;
 }
-#nav_section a:hover {
-  background-color: #161626;
-  color: #777;
-}
 
 @media only screen and (min-width: 768px) {
   /* Hide Hamburger */
   #nav_section {
+    height: auto;
     padding: 0%;
   }
   #nav_section label {
@@ -174,6 +171,8 @@ a {
   }
 
   #nav_items {
+    position: relative;
+    top: auto;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -356,6 +355,7 @@ header img {
   display: flex;
   position: relative;
   flex-direction: column;
+  background-color: #14171b;
   margin: 2rem 5vw;
   z-index: 10;
   justify-content: left;
@@ -365,14 +365,6 @@ header img {
 }
 .uneven_section ul, .even_section ul {
   margin-left: 2rem;
-}
-
-.uneven_section {
-  background-color: #14171b;
-}
-
-.even_section {
-  background-color: #14171b;
 }
 
 footer {
@@ -395,6 +387,11 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) {
+  #sections {
+    position: relative;
+    top: auto;
+  }
+
   header {
     height: auto;
     padding-bottom: 0.6rem;

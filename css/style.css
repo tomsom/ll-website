@@ -184,6 +184,7 @@ header {
   text-align: center;
   flex-direction: column;
   justify-content: space-evenly;
+  height: 100vh;
   width: 100%;
   padding: 2rem 0;
   background-color: #161626;
@@ -195,36 +196,40 @@ header hr {
   width: 90%;
   margin: 0 auto;
 }
+header img {
+  height: 45vh;
+}
 
 .nav_section {
   display: flex;
+  width: 100%;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   padding: 1rem 0;
 }
-.nav_section ul, .nav_section li {
-  list-style: none;
-}
-.nav_section a, .nav_section li {
+.nav_section a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
   font-weight: 600;
   font-size: 0.9rem;
-  color: #333;
+  color: #ccc;
   padding: 0.6rem;
-  margin: 1rem 8%;
-  border-radius: 0.3rem;
+  margin: 0.4rem 0;
+  width: 80vw;
+  transition: background-color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  border: solid #161626 5px;
 }
-.nav_section li {
-  background-color: #718c69ff;
-}
-.nav_section li:hover {
-  background-color: #99b75fff;
+.nav_section a:hover {
+  background-color: #161626;
+  color: #777;
 }
 
 .uneven_section, .even_section {
-  padding: 1rem 1vw;
+  padding: 1rem 2vw;
 }
 .uneven_section ul, .even_section ul {
   margin-left: 2.5rem;
@@ -259,7 +264,11 @@ footer p {
 
 @media only screen and (min-width: 768px) {
   header {
+    height: auto;
     padding-bottom: 0.6rem;
+  }
+  header img {
+    height: 11vh;
   }
 
   .nav_section {
@@ -289,6 +298,7 @@ footer p {
     color: #ccc;
     padding-top: 0.6rem;
     padding-bottom: 0.3rem;
+    border: none;
     border-bottom: solid;
     border-color: #161626;
     border-width: 0.2rem;
@@ -309,5 +319,4 @@ footer p {
   .images {
     margin-left: 3rem;
   }
-}
-/*CONTAINER LAYOUT*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

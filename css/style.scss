@@ -10,6 +10,7 @@ header {
     text-align: center;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100vh;
     width: 100%;
     padding: 2rem 0;
     background-color: $darkest_blue;
@@ -20,34 +21,44 @@ header {
         width: 90%;
         margin: 0 auto;
     }
+
+   img {
+       height: 45vh;
+   }
 }
 
 .nav_section {
     display: flex;
+    width: 100%;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     padding: 1rem 0;
-    ul, li {list-style: none;}
-    a, li {
+    a{
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 0.08rem;
         font-weight: 600;
         font-size: 0.9rem;
-        color: $dark_gray;
+        color: $light_gray;
         padding: 0.6rem;
-        margin: 1rem 8%;
-        border-radius: 0.3rem;
+        margin: 0.4rem 0;
+        width: 80vw;
+        transition: background-color 200ms ease-in-out;
+        transition: color 200ms ease-in-out;
+        border: solid $darkest_blue 5px;
     }
-    li { background-color: $dark_green;}
 
-    li:hover {
-        background-color: $green;
+
+    a:hover {
+        background-color: $darkest_blue;
+        color: $gray;
     }
 }
 
 .uneven_section, .even_section {
-    padding: 1rem 1vw;  
+    padding: 1rem 2vw;  
     ul {margin-left: 2.5rem;}
 }
 .uneven_section {background-color: $darker_blue;}
@@ -79,7 +90,10 @@ footer {
 @media only screen and (min-width: 768px) {
 
     header {
+        height: auto;
         padding-bottom: 0.6rem;
+
+        img {height: 11vh;}
     }
 
     .nav_section {
@@ -110,6 +124,7 @@ footer {
             color: $light_gray;
             padding-top: 0.6rem;
             padding-bottom: 0.3rem;
+            border: none;
             border-bottom: solid;
             border-color: $darkest_blue;
             border-width: 0.2rem;
@@ -132,9 +147,6 @@ footer {
 
 }
 
-
-
-/*CONTAINER LAYOUT*/
 
 
 

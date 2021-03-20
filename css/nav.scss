@@ -53,7 +53,7 @@
         top: 92vh;
         left: 1rem;
         z-index: 5;
-        color: white;
+        color: $color_primary_text;
         font-style: normal;
         font-size: 2rem;
         padding: 0.5rem;
@@ -124,8 +124,8 @@
                
         
         a:hover {
-            border-color: $light_green;
-            color: $light_green;
+            border-color: $color_secondary_text;
+            color: $color_secondary_text;
         }
     }
 }

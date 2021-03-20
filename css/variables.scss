@@ -10,32 +10,24 @@
   }
 /*COLORS*/
 
+    //dark-theme
     $color_background_body: #000a12;
     $color_background_header_footer: #060e1b;
-    //$color_background_header_footer: #00101d;
     $color_primary_background: #14171b;
     $color_secondary_background: #000a12;
     $color_primary_text: rgb(190, 190, 165);
-    $color_secondary_text: #555;
+    $color_secondary_text: #dddfa5ff;
     $color_primary_other: #161626;
     
-    $lightest_blue: #eef;
-    $lighter_blue: #ddf;
-
-    $darker_gray: #222;
-
-    //dark-theme
-    
-    $darker_blue: #202028;
-    $dark_blue: #252530;
-
-    $dark_gray: #333;
-    $gray: #777;
-    $light_gray: #ccc;
-
     //light-theme
-    @media (prefers-color-scheme: light) {
-
+    @media (prefers-color-scheme: dark) {
+        $color_background_body: #eef;
+        $color_background_header_footer: #ddf;
+        $color_primary_background: #d6d8eb;
+        $color_secondary_background: #6aabe0;
+        $color_primary_text: #222;
+        $color_secondary_text: #718c69ff;
+        $color_primary_other: #1a1e30;
     }
     
 

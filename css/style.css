@@ -140,7 +140,7 @@ a {
   top: 92vh;
   left: 1rem;
   z-index: 5;
-  color: white;
+  color: #bebea5;
   font-style: normal;
   font-size: 2rem;
   padding: 0.5rem;
@@ -151,7 +151,7 @@ a {
   letter-spacing: 0.08rem;
   font-weight: 600;
   font-size: 0.9rem;
-  color: #555;
+  color: #dddfa5ff;
   padding: 0.6rem;
   margin: 0.4rem 0;
   width: 80vw;
@@ -383,7 +383,7 @@ footer a, footer li {
 }
 footer p {
   margin: 0.6rem;
-  color: #777;
+  color: #bebea5;
 }
 
 @media only screen and (min-width: 768px) {

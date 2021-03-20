@@ -116,7 +116,7 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  height: 15rem;
+  padding: 2rem 0;
   background-color: #161626;
 }
 header a {
@@ -131,8 +131,9 @@ header hr {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 1rem 0;
 }
-.nav_section ul, .nav_section li {
+.nav_section ul {
   list-style: none;
 }
 .nav_section a, .nav_section li {

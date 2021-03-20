@@ -272,20 +272,17 @@ footer p {
   }
 
   .nav_section {
-    display: block;
-    text-align: center;
-    background-color: #161626;
-    padding-top: 0;
-    padding-bottom: 0.7rem;
-  }
-  .nav_section ul {
     display: flex;
-    margin: 0 0 0 0;
-    justify-content: space-evenly;
-    margin: 0 16%;
-    list-style: none;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    background-color: #161626;
+    padding: 0 14vw 0.7rem 14vw;
+    justify-content: space-between;
   }
-  .nav_section a, .nav_section li {
+  .nav_section a {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.08rem;

@@ -97,21 +97,17 @@ footer {
     }
 
     .nav_section {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
         text-align: center;
+        align-items: center;
         background-color: $darkest_blue;
-        padding-top: 0;
-        padding-bottom: 0.7rem;
+        padding: 0 14vw 0.7rem 14vw;
+        justify-content: space-between;
 
-        ul {
-            display: flex;
-            margin: 0 0 0 0 ;
-            justify-content: space-evenly;
-            margin: 0 16%;
-            list-style: none;
-        }
-
-        a, li {
+        a {
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 0.08rem;

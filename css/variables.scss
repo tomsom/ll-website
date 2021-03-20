@@ -2,15 +2,17 @@
 /*COLORS*/
 
     $dark_green: #718c69ff;
-    $middle_green: #99b75fff;
+    $green: #99b75fff;
     $light_green: #dddfa5ff;
 
     $darkest_blue: #161626;
     $darker_blue: #202028;
     $dark_blue: #252530;
 
-    $light_gray: #ccc;
+    $dark_gray: #333;
     $gray: #777;
+    $light_gray: #ccc;
+    
 
 /*SIZES*/
     //scss variables dont work with calc() too well...

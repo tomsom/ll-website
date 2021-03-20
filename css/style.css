@@ -207,10 +207,20 @@ header hr {
 }
 .nav_section a, .nav_section li {
   text-decoration: none;
-  background-color: #718c69ff;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
   padding: 0.6rem;
   margin: 1rem 8%;
   border-radius: 0.3rem;
+}
+.nav_section li {
+  background-color: #718c69ff;
+}
+.nav_section li:hover {
+  background-color: #99b75fff;
 }
 
 .uneven_section, .even_section {

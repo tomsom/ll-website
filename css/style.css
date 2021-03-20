@@ -363,6 +363,9 @@ header img {
   padding: 2rem;
   height: 100vh;
 }
+.uneven_section ul, .even_section ul {
+  margin-left: 2rem;
+}
 
 .uneven_section {
   background-color: #14171b;

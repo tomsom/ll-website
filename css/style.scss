@@ -1,25 +1,8 @@
+@import 'variables.scss';
+@import 'general.scss';
 /*GENERAL*/
 
-$dark_green: #718c69ff;
-$middle_green: #99b75fff;
-$light_green: #dddfa5ff;
 
-$darkest_blue: #161626;
-$darker_blue: #202028;
-$dark_blue: #252530;
-
-$sidebar_width: 40vw;
-$normal_sidebar_width: 15%;
-$small_sidebar_width: 15%;
-
-$header_height: 100vw;
-
-$desktop_header_height: 10rem;
-$mobile_header_height: 60vw;
-
-$footer_height: 15rem;
-
-$sidebar_height: 30vw;
 
 *{
 margin: 0;
@@ -77,17 +60,40 @@ p, li {
 
 /*MOBILE*/
 header {
+
+    a {text-decoration: none;}
+
+    hr {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
     display: flex;
-    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
     height: $header_height;
     background-color: $darkest_blue;
 }
 
 .nav_section {
-    width: 100%;
-    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    ul, li {list-style: none;}
+    a, li {
+        text-decoration: none;
+        background-color: $dark_green;
+        padding: 0.6rem;
+        margin: 1rem 8%;
+        border-radius: 0.3rem;
+    }
+
+
 }
+
 
 .cont_foot {
     width: 100%;
